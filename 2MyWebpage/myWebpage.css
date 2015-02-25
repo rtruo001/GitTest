@@ -1,0 +1,109 @@
+* {
+	margin: 0 0;
+}
+
+header {
+	height: 35px;
+	background:	black;
+	position: fixed;
+	color: #00CCFF;
+	width: 100%;
+}
+
+div {
+
+}
+
+section {
+
+}
+
+article {
+
+}
+
+body {
+
+}
+
+h1 {
+
+}
+
+.parallax {
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.parallax__layer--base {
+	transform: translateZ(0);
+}
+
+.parallax__layer--fore {
+	transform: translateZ(-2px) scale(3);
+	z-index: 1;
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+.entireWebPage {
+	background: linear-gradient(0deg, red, yellow);
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#picture {
+	margin: 6px 30px;
+	float: left;
+}
+
+#navBar {
+	float: left;
+}
+
+ul#nav {
+	margin: 10px 30px;
+	list-style: none;
+}
+
+ul#nav li {
+	margin: 0 20px;
+	float: left;
+}
+
+#home {
+	height: 1000px;
+	background-color: yellow;
+	background-image: url("frenchbulldog.jpg");
+}
+
+#aboutMe {
+	height: 1000px;
+	background-color: white;
+	background-image: url("nature.jpg");
+}
+
+#resume {
+	height: 1000px;
+	background-color: purple;
+	background-image: url("cat.jpg");
+
+}
+
+#myLinks {
+	height: 1000px;
+	background-color: white;
+	background-image: url("norway.jpg");
+}
+
