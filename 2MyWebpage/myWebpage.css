@@ -1,5 +1,6 @@
 * {
-	margin: 0 0;
+	margin: 0;
+	padding: 0;
 }
 
 header {
@@ -10,29 +11,9 @@ header {
 	width: 100%;
 }
 
-div {
-
-}
-
-section {
-
-}
-
-article {
-
-}
-
-body {
-
-}
-
-h1 {
-
-}
-
 .parallax {
 	perspective: 1px;
-	height: 100vh;
+	height: 80vh;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -82,28 +63,37 @@ ul#nav li {
 	float: left;
 }
 
+
+.textInSection {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	padding-top: 500px;
+	background-position: center center;
+}
+
 #home {
 	height: 1000px;
-	background-color: yellow;
 	background-image: url("frenchbulldog.jpg");
+	background-position: left;
+	background-attachment: fixed;
 }
 
 #aboutMe {
-	height: 1000px;
-	background-color: white;
-	background-image: url("nature.jpg");
+	height: 1000px;		
+	background-image: url("nature.jpg");	
+	background-attachment: fixed;
 }
 
 #resume {
 	height: 1000px;
-	background-color: purple;
 	background-image: url("cat.jpg");
-
+	background-attachment: fixed;
 }
 
 #myLinks {
 	height: 1000px;
-	background-color: white;
 	background-image: url("norway.jpg");
+	background-attachment: fixed;
 }
 
