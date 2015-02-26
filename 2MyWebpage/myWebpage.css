@@ -74,26 +74,27 @@ ul#nav li {
 
 #home {
 	height: 1000px;
-	background-image: url("frenchbulldog.jpg");
+	background-image: url("./photos/frenchbulldog.jpg");
 	background-position: left;
 	background-attachment: fixed;
 }
 
 #aboutMe {
 	height: 1000px;		
-	background-image: url("nature.jpg");	
+	background-image: url("./photos/nature.jpg");	
 	background-attachment: fixed;
 }
 
 #resume {
 	height: 1000px;
-	background-image: url("cat.jpg");
+	background-image: url("./photos/cat.jpg");
+	background-position: left;
 	background-attachment: fixed;
 }
 
 #myLinks {
 	height: 1000px;
-	background-image: url("norway.jpg");
+	background-image: url("./photos/norway.jpg");
 	background-attachment: fixed;
 }
 
