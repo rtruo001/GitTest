@@ -3,15 +3,29 @@
 	padding: 0;
 }
 
-header {
-	height: 35px;
-	background:	black;
-	position: fixed;
-	color: #00CCFF;
-	width: 100%;
+body {
+	background-color: black;
 }
 
-.parallax {
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*.parallax {
 	perspective: 1px;
 	height: 80vh;
 	overflow-x: hidden;
@@ -35,18 +49,40 @@ header {
 
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
-}
+}*/
 
 .entireWebPage {
-	background: linear-gradient(0deg, red, yellow);
+	background: black;
 	margin: 0;
 	width: 100%;
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 
-#picture {
-	margin: 6px 30px;
-	float: left;
+header {
+	height: 100px;
+	background:	rgba(1,1,1,0.4);
+	position: fixed;
+	color: white;
+	width: 100%;
+	z-index: 10000;
+}
+
+#pictureOfMe {
+	width: 80px;
+	height: 80px;
+	background-image: url("./photos/me.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 50%;
+	border-color: black;
+  z-index: 1000;
+	position: fixed;
+	left: 100px;
+	top: 10px;
 }
 
 #navBar {
@@ -54,7 +90,7 @@ header {
 }
 
 ul#nav {
-	margin: 10px 30px;
+	margin: 40px 200px;
 	list-style: none;
 }
 
@@ -63,38 +99,75 @@ ul#nav li {
 	float: left;
 }
 
-
 .textInSection {
 	text-align: center;
 	font-size: 40px;
 	color: white;
-	padding-top: 500px;
-	background-position: center center;
+	background-position: center center;  
+	z-index: 99999
 }
 
+#homeContent {
+	z-index: 10;
+}
+
+/*
+THE FIRST SLIDE OF WEBSITE
+*/
 #home {
-	height: 1000px;
-	background-image: url("./photos/frenchbulldog.jpg");
-	background-position: left;
+	width: 100vw;
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 10;
 }
 
+video#bgvid {
+	width: 100vw;
+	min-width: 100%; min-height: 100%;
+	z-index: 0;
+	background-size: cover;
+}
+
+#homeText {
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	padding-top: 10%;
+	background-color: rgba(1.0,0.0,0.0,1.0);
+}
+
+/*
+ABOUT ME SECTIONS
+*/
 #aboutMe {
-	height: 1000px;		
-	background-image: url("./photos/nature.jpg");	
+	width: 100vw;
+  height: 100vh;
+	background-image: url("./photos/mountainPose.jpg");	
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 100;
 }
 
 #resume {
-	height: 1000px;
+	width: 100vw;
+  height: 100vh;
 	background-image: url("./photos/cat.jpg");
-	background-position: left;
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 200;
 }
 
 #myLinks {
-	height: 1000px;
+	width: 100vw;
+	height: 100vh;
 	background-image: url("./photos/norway.jpg");
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	z-index: 300;
 }
+
 
