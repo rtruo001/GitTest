@@ -25,6 +25,11 @@ a:active {
     text-decoration: underline;
 }
 
+.hideme
+{
+    opacity: 0.25;
+}
+
 /*.parallax {
 	perspective: 1px;
 	height: 80vh;
@@ -60,7 +65,7 @@ a:active {
 }
 
 header {
-	height: 100px;
+	height: 80px;
 	background:	rgba(1,1,1,0.4);
 	position: fixed;
 	color: white;
@@ -69,9 +74,9 @@ header {
 }
 
 #pictureOfMe {
-	width: 80px;
-	height: 80px;
-	background-image: url("./photos/me.jpg");
+	width: 70px;
+	height: 70px;
+	background-image: url("./photos/cat.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -81,8 +86,8 @@ header {
 	border-color: black;
   z-index: 1000;
 	position: fixed;
-	left: 100px;
-	top: 10px;
+	left: 70px;
+	top: 4px;
 }
 
 #navBar {
@@ -90,7 +95,7 @@ header {
 }
 
 ul#nav {
-	margin: 40px 200px;
+	margin: 28px 200px;
 	list-style: none;
 }
 
@@ -100,10 +105,8 @@ ul#nav li {
 }
 
 .textInSection {
-	text-align: center;
 	font-size: 40px;
 	color: white;
-	background-position: center center;  
 	z-index: 99999
 }
 
@@ -116,10 +119,13 @@ THE FIRST SLIDE OF WEBSITE
 */
 #home {
 	width: 100vw;
+	height: 100vh;
+	background-image: url("./photos/mountainPose.jpg");	
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 10;
+	color: rgba(1, 1, 1, 0.5);
 }
 
 video#bgvid {
@@ -130,11 +136,13 @@ video#bgvid {
 }
 
 #homeText {
+	color: white;
 	width: 100vw;
 	height: 100vh;
 	z-index: 9999;
 	padding-top: 10%;
-	background-color: rgba(1.0,0.0,0.0,1.0);
+	text-shadow: 0px 0px 50px black;
+	text-align: center;
 }
 
 /*
@@ -143,31 +151,100 @@ ABOUT ME SECTIONS
 #aboutMe {
 	width: 100vw;
   height: 100vh;
-	background-image: url("./photos/mountainPose.jpg");	
+  background: black;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 100;
+	position: relative;
+}
+
+#aboutMePicture {
+	display: inline-block;
+ 	width: 510px;
+ 	padding: 60px;
+}
+
+#aboutMePicture img {
+	width: 450px;
+	height: 600px;
+	border-width: 2px;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+}
+
+#aboutMeText {
+	display: inline-block;
+	padding: 5%;
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translate(0, -50%);
+}
+
+#aboutMe .textInSection {
+	font-size: 16px;
+	text-align: none;
 }
 
 #resume {
 	width: 100vw;
   height: 100vh;
-	background-image: url("./photos/cat.jpg");
+	background-image: url("./photos/frenchbulldog.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 200;
 }
 
+/*
+Contact Links
+*/
 #myLinks {
 	width: 100vw;
-	height: 100vh;
-	background-image: url("./photos/norway.jpg");
+	height: 200px;
+	margin-top: 80px;
+	background: rgba(0,0,0,0);
 	background-attachment: fixed;
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	z-index: 300;
 }
 
+#myLinks h2 {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	
+}
 
+#linkIcons {
+	text-align: center;
+	padding: 5px;
+	position: relative;
+}
+
+.icons {
+
+}
+
+.icons h1 {
+	display: inline-block;
+	font-size: 8px;
+	margin-right: 20px;
+	position: relative;
+	bottom: 5px;
+	padding-left: 5px;
+}
+
+.icons h1:hover{
+	/*Light Blue*/
+	color: #add8e6;
+}
+
+.icons:hover {
+	/*Light Blue*/
+	color: #add8e6;
+	text-decoration: none;
+}
